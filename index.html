@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EasyAPI 用户支持</title>
+<style>
+  :root { --ink:#1f2733; --sub:#5b6875; --line:#e6ebf0; --bg:#ffffff; --accent:#0f9bb5; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:0; background:#f5f7f9; color:var(--ink);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+         line-height:1.8; font-size:15px; }
+  .wrap { max-width:680px; margin:0 auto; padding:36px 22px 60px; background:var(--bg);
+          min-height:100vh; box-shadow:0 1px 12px rgba(0,0,0,.05); }
+  .brand { display:flex; align-items:center; gap:12px; border-bottom:1px solid var(--line); padding-bottom:18px; }
+  .brand-name { font-size:22px; font-weight:700; }
+  .brand-tag { color:var(--accent); font-size:13px; margin-top:2px; }
+  h2 { font-size:17px; margin:26px 0 8px; color:var(--accent); }
+  p { margin:8px 0; }
+  .card { background:#f7f9fb; border:1px solid var(--line); border-radius:8px; padding:14px 16px; margin:12px 0; }
+  a { color:var(--accent); }
+  .faq dt { font-weight:600; margin:14px 0 2px; }
+  .faq dd { margin:0; color:var(--sub); }
+  footer { margin-top:40px; padding-top:18px; border-top:1px solid var(--line); color:var(--sub); font-size:12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <div>
+      <div class="brand-name">EasyAPI</div>
+      <div class="brand-tag">把接口调试，装进口袋</div>
+    </div>
+  </div>
+
+  <p>欢迎来到 EasyAPI 用户支持页。这里有常见问题的解答与联系方式；如未解决，欢迎随时来信。</p>
+
+  <h2>联系我们</h2>
+  <div class="card">
+    <p style="margin:0">
+      邮箱：<a href="mailto:terryzou1989@163.com">terryzou1989@163.com</a><br>
+      反馈建议、功能需求或使用时遇到的问题，都欢迎发邮件。个人开发者，通常在 1~2 天内回复。
+    </p>
+  </div>
+
+  <h2>常见问题</h2>
+  <dl class="faq">
+    <dt>数据存在哪里？会上传吗？</dt>
+    <dd>所有配置、参数与日志只保存在你的设备本地，不上传云端、不采集个人信息。详见<a href="privacy-policy.html">隐私政策</a>。</dd>
+
+    <dt>如何把配置迁移到新手机？</dt>
+    <dd>在旧设备使用「导出配置 → 复制 JSON」，通过微信等方式发给自己，在新设备「导入配置 → 从剪贴板读取」即可。</dd>
+
+    <dt>为什么请求有的 http 地址失败了？</dt>
+    <dd>iOS 默认限制明文（http）网络请求。如需调试局域网 http 接口，请确认已允许本地网络权限；生产环境建议使用 https。</dd>
+
+    <dt>运行时变量（如 token）会保存吗？</dt>
+    <dd>默认只在内存中，退出应用即清空，不会落盘、不会随配置导出。</dd>
+
+    <dt>导出的配置文件安全吗？</dt>
+    <dd>导出内容可能包含 token 等敏感值，分享或保管前请先检查并妥善处置。</dd>
+  </dl>
+
+  <h2>使用条款</h2>
+  <p>请仅对你拥有合法授权的接口使用本工具，遵守目标系统服务条款与所在地区法律法规。本软件按“现状”提供，详情见应用内「关于」页的免责声明。</p>
+
+  <footer>© 2026 EasyAPI. 保留所有权利。　<a href="privacy-policy.html">隐私政策</a></footer>
+
+</div>
+</body>
+</html>

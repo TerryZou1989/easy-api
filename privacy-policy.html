@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EasyAPI 隐私政策</title>
+<style>
+  :root { --ink:#1f2733; --sub:#5b6875; --line:#e6ebf0; --bg:#ffffff; --accent:#0f9bb5; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:0; background:#f5f7f9; color:var(--ink);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+         line-height:1.8; font-size:15px; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 22px 64px; background:var(--bg);
+          min-height:100vh; box-shadow:0 1px 12px rgba(0,0,0,.05); }
+  h1 { font-size:24px; margin:0 0 6px; }
+  .meta { color:var(--sub); font-size:13px; border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:8px; }
+  h2 { font-size:17px; margin:28px 0 8px; color:var(--accent); }
+  p { margin:8px 0; }
+  ul { margin:8px 0; padding-left:22px; }
+  li { margin:5px 0; }
+  .note { background:#f0fafb; border-left:3px solid var(--accent); padding:10px 14px; margin:14px 0;
+          font-size:14px; color:#33505a; }
+  .contact { background:#f7f9fb; border:1px solid var(--line); border-radius:8px; padding:14px 16px; margin-top:10px; }
+  a { color:var(--accent); }
+  footer { margin-top:40px; padding-top:18px; border-top:1px solid var(--line); color:var(--sub); font-size:12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>EasyAPI 隐私政策</h1>
+  <div class="meta">生效日期：2026 年 11 月 23 日　|　最后更新：2026 年 11 月 23 日</div>
+
+  <p>EasyAPI 是一款由个人开发者制作的手机端接口（API）调试工具。我们深知调试数据往往涉及接口地址、参数乃至令牌等敏感信息，因此从设计之初就坚持“数据不出本机”。本政策说明本应用如何处理（或不处理）你的数据。</p>
+
+  <div class="note">
+    一句话总结：<strong>你的接口配置、参数与日志只保存在你的设备本地；本应用没有账号体系，不收集个人信息，不向我们的服务器或任何第三方回传数据。</strong>
+  </div>
+
+  <h2>一、我们收集哪些信息</h2>
+  <p><strong>我们不收集你的个人信息。</strong>本应用没有注册/登录流程，不要求你提供姓名、邮箱、手机号等任何个人身份信息。我们也没有集成任何第三方统计、广告或数据分析 SDK，因此不会自动采集设备标识符、广告 ID、位置或行为数据。</p>
+  <p>你在应用内看到的“调用统计”，是对你自己发起的请求次数与频次所做的本地汇总，仅保存在你的设备上，不随配置导出，也不会上传。</p>
+
+  <h2>二、数据如何存储</h2>
+  <p>你创建的项目、模块、接口配置，填写的参数与变量定义，以及调用日志，均通过设备本地存储保存在你的手机中（应用私有存储空间）。这些数据：</p>
+  <ul>
+    <li>不会上传到我们的服务器（本应用没有服务器）；</li>
+    <li>不会同步到云端或任何第三方服务；</li>
+    <li>卸载应用或清除应用数据后将被删除。</li>
+  </ul>
+  <p>运行时产生的变量（例如登录令牌 token）默认只保存在内存中，退出应用即清空。</p>
+
+  <h2>三、网络访问说明</h2>
+  <p>本应用需要网络权限，用途仅限于<strong>按照你亲自配置的地址和参数，向指定的接口发起请求</strong>，并将响应展示给你——这是接口调试工具的核心功能。请求的目标地址、请求头与请求体完全由你决定。</p>
+  <ul>
+    <li>本应用不会把你的配置或数据发送到我们自己的服务器；</li>
+    <li>请求会直接发往你填写的目标服务地址。该目标服务如何处理你发送的数据，由该服务的运营方决定，请你在调试时遵守其服务条款；</li>
+    <li>“本地网络”权限仅用于访问你所在局域网内的设备或服务（例如开发机、测试服务器）进行调试。</li>
+  </ul>
+  <div class="note">
+    请注意：如果你在参数中填入令牌、密码等敏感信息，这些信息会作为请求的一部分发送至你配置的目标地址。请勿对未授权的接口发起请求。
+  </div>
+
+  <h2>四、文件与剪贴板</h2>
+  <p>本应用提供配置的导出与导入功能，便于你备份或在设备间迁移配置：</p>
+  <ul>
+    <li>导出时，配置会写入应用私有目录，或通过系统分享/剪贴板交由你自行处理；</li>
+    <li>导入时，应用会读取你主动选择的文件或剪贴板内容；</li>
+    <li>导出文件中可能包含令牌等敏感值，分享与保管请自行留意。</li>
+  </ul>
+  <p>除上述由你主动触发的操作外，本应用不会读取你的文件或剪贴板内容。</p>
+
+  <h2>五、我们共享哪些信息</h2>
+  <p>我们不收集个人信息，因此也不存在出售、出租或与第三方共享个人信息的情形。本应用不含广告，不含第三方分析，不含社交分享 SDK（系统分享由操作系统提供）。</p>
+
+  <h2>六、数据安全</h2>
+  <p>你的数据保存在设备本地，其安全性取决于你的设备与使用习惯。建议开启设备锁屏，并定期使用“导出配置”功能备份。因设备遗失、系统清理或卸载应用造成的数据丢失，作者不承担责任。</p>
+
+  <h2>七、儿童隐私</h2>
+  <p>本应用是面向开发、测试与运维人员的专业工具，不面向儿童，也不会明知地收集 13 岁以下儿童的任何信息。</p>
+
+  <h2>八、政策更新</h2>
+  <p>本政策可能随应用版本更新而调整。如有重大变更，我们会在应用内或通过应用商店更新说明予以提示。更新后的政策以本页面公布的版本为准。</p>
+
+  <h2>九、联系我们</h2>
+  <p>如对本隐私政策有任何疑问或意见，可通过以下方式联系开发者：</p>
+  <div class="contact">
+    <p style="margin:0">开发者：Terry Zou（个人开发者）<br>
+    邮箱：<a href="mailto:terryzou1989@163.com">terryzou1989@163.com</a><br>
+    用户支持页面：<a href="index.html">EasyAPI 用户支持页</a>（本站点首页）</p>
+  </div>
+
+  <footer>© 2026 EasyAPI. 保留所有权利。　<a href="index.html">返回用户支持页</a></footer>
+
+</div>
+</body>
+</html>
